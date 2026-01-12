@@ -1,0 +1,24 @@
+import random
+import math
+Health = 100
+BVest = False
+BVestDamage = 0.5
+Testloop = True
+YesVest = False
+NoVest = False
+Shot = 50
+while (Testloop == True):
+    WannaGetShot = input("Wanna Wear The Vest or Nah? yes or no")
+    if (WannaGetShot == "no"):
+        Testloop = False
+        print("")
+        print("Bet")
+        Health = Health - Shot 
+        print(Health)
+    if (WannaGetShot == "yes"):
+        Testloop = False
+        print("")
+        print("Bet")
+        Health = Health - (Shot * BVestDamage)
+        Health = math.ceil(Health)
+        print(Health)
